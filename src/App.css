@@ -1,38 +1,36 @@
 .App {
+  margin: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #07F;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.file-exists {
+  text-align: left;
+  color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.drag-drop-zone {
+  padding: 2rem;
+  text-align: center;
+  background: #07F;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 10px #C0C0C0;
 }
 
-.App-link {
-  color: #61dafb;
+.drag-drop-zone p {
+  color: #FFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.drag-drop-zone.inside-drag-area {
+  opacity: 0.7;
+}
+
+.dropped-files li {
+  color: #07F;
+  padding: 3px;
+  text-align: left;
+  font-weight: bold;
 }
