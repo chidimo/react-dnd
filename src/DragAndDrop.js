@@ -2,6 +2,8 @@ import React from 'react';
 
 const DragAndDrop = props => {
 
+  const { data, dispatch } = props;
+
   const handleDragEnter = e => {
     e.preventDefault();
     e.stopPropagation();
