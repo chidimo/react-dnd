@@ -15,6 +15,15 @@ const DragAndDrop = props => {
     e.preventDefault();
     e.stopPropagation();
 
+    console.log('curr', e.currentTarget)
+    console.log('curr.cont', e.currentTarget.contains(e.relatedTarget))
+    console.log('rel', e.relatedTarget)
+    console.log('_____________________')
+
+    if (e.currentTarget.contains(e.relatedTarget)) {
+      
+    }
+
     dispatch({ type: 'SET_DROP_DEPTH', dropDepth: data.dropDepth - 1 });
     if (data.dropDepth > 0) return
     dispatch({ type: 'SET_IN_DROP_ZONE', inDropZone: false })
