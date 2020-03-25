@@ -39,7 +39,6 @@ const DragAndDrop = props => {
       files = files.filter(f => !existingFiles.includes(f.name))
 
       dispatch({ type: 'ADD_FILE_TO_LIST', files });
-      e.dataTransfer.clearData();
       dispatch({ type: 'SET_DROP_DEPTH', dropDepth: 0 });
       dispatch({ type: 'SET_IN_DROP_ZONE', inDropZone: false });
     }
